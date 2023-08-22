@@ -68,3 +68,85 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+# Complete_Redux_Toolkit
+
+Redux has few important part to be known
+1> Store :- It stores the data globally
+2> Reducer :- This is like controller and has job to controll things.It is just an object having action to perform.
+3> useSelector (Hook):- It directly talk to store ,which gives selective data from store
+4> useDispatch :- Whenever we want to update data in store ,where we use useDispatch.
+
+
+Tailwind CSS installation terminal command :-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+1> Create your project
+Start by creating a new React project with Create React App v5.0+ if you don't have one already set up.
+
+npx create-react-app my-project
+cd my-project
+
+2> Install Tailwind CSS
+Install tailwindcss via npm, and then run the init command to generate your tailwind.config.js file.
+
+npm install -D tailwindcss
+npx tailwindcss init
+
+3> Configure your template paths
+Add the paths to all of your template files in your tailwind.config.js file.
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+4> Add the Tailwind directives to your CSS
+Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+5> Start your build process
+Run your build process with npm run start.
+
+npm run start
+
+6> Start using Tailwind in your project
+Start using Tailwind’s utility classes to style your content.
+
+export default function App() {
+  return (
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+  )
+}
+
+
+
+Redux Toolkit Documentation :-  https://redux-toolkit.js.org/introduction/getting-started
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+reduxjs/toolkit is stand alone library.To interact with react we need react-redux.
+
+>>> npm install @reduxjs/toolkit react-redux
+
+
+
+
+
+
+
+
+
