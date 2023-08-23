@@ -142,7 +142,8 @@ reduxjs/toolkit is stand alone library.To interact with react we need react-redu
 
 >>> npm install @reduxjs/toolkit react-redux
 
-
+can add chrome extension for redux devtool
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
 
 
 
